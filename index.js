@@ -88,6 +88,57 @@
 // hello()
 
 
+function eAgora(){
+    let cont = 1
+    function f1(){
+        console.log(cont)
+        cont++
+    }
+    cont++
+    function f2(){
+        console.log(cont)
+    }
+    return {f1, f2}
+}
+
+let eAgoraResult = eAgora()
+eAgoraResult.f1()
+eAgoraResult.f2()
+eAgoraResult.f1()
+eAgoraResult.f2()
+
+// function saudacoesFactory (saudacao, nome){
+//     return function(){
+//         console.log(`${saudacao}, ${nome}`)
+//     }
+// }
+
+// let olaJoao = saudacoesFactory('Ola', 'Jão')
+// let tchauJoao = saudacoesFactory('Tchau', 'Jão')
+// olaJoao()
+// tchauJoao()
+
+// function ola(){
+//     let nome = 'João'
+//     return function (){
+//         console.log(`Ola, ${nome}`)
+//     }
+// }
+
+// let olaResult = ola()
+// olaResult ()
+
+// 
+// function f(){
+//     let nome = 'João'
+//     function g(){
+//         console.log(nome) //g tem acesso a variável "nome" pois é uma função interna a F e tem acesso as variáveis da função mãe, porém a mãe não tem acesso as variaveis da função filha
+//     }
+//     g()
+// }
+// f()
+
+
 // let umaFuncao = function (){
 //     console.log ("Fui armazenada em uma variável")
 // }
