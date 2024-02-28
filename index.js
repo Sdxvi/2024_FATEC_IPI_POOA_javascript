@@ -88,6 +88,55 @@
 // hello()
 
 
+// let umaFuncao = function (){
+//     console.log ("Fui armazenada em uma variável")
+// }
+// umaFuncao()
+
+// f(function(){
+//     console.log("Estou sendo passada para f...")
+// })
+
+// function f(funcao){  //FUNÇÃO DE ALTA ORDEM POR RECEBER UMA FUNÇÃO COMO PARAMETRO
+//     funcao()
+// }
+
+
+// function g(){   //função de alta ordem tb pois define uma função dentro dela
+//     function outrafuncao(){
+//         console.log ("Fui definida por g")
+//     }
+//     return outrafuncao
+// }
+
+// g()() //Chama a função "outrafuncao" (pois é o retorno da expressão g()) e o segundo () executa
+
+// f(g()) //f chama a outra função
+
+// function produzUmaFuncao(a, b, operador){
+//     if (operador === '+') return function (a, b){
+//         a + b
+//     }
+//     else if (operador === '-') return (a, b) => a - b
+// }
+
+// function executa(f){
+//     f()
+// }
+
+// executa(function(a,b){return a + b})
+
+
+// public class Teste{
+//     public void m(){
+
+//     }
+//     public void testando(){
+//         var meuMetodo = m;
+//     }
+// }
+
+
 //FUNÇÕES
 
 // const hello = () => console.log("Hello")
@@ -99,15 +148,15 @@
 //     return valor * 3
 // }
 
-function f3 () {
-    
-}
+// function f3 () {
 
-const ehPar = n => n % 2 === 0
-console.log(ehPar(10))
+// }
 
-const ehPar2 = n => {n % 2 === 0}
-console.log(ehPar2(10))
+// const ehPar = n => n % 2 === 0
+// console.log(ehPar(10))
+
+// const ehPar2 = n => {n % 2 === 0}
+// console.log(ehPar2(10))
 
 // const f = () => {}
 // const umArgumento = n => {
