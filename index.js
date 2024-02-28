@@ -73,16 +73,67 @@
 
 //FUNÇÕES
 
-function hello(nome){
-    console.log('oi, ' + nome)
-}
-hello('Vinicius')
+// function hello(nome){
+//     console.log('oi, ' + nome)
+// }
+// hello('Vinicius')
 
-function hello(){
-    console.log('tchau')
+// function hello(){
+//     console.log('tchau')
+// }
+// hello()
+// function hello(){
+//     console.log('oi')
+// }
+// hello()
+
+
+//FUNÇÕES
+
+// const hello = () => console.log("Hello")
+// hello()
+
+// const dobro = valor => valor * 2
+
+// let triplo = (valor) => {
+//     return valor * 3
+// }
+
+function f3 () {
+    
 }
-hello()
-function hello(){
-    console.log('oi')
-}
-hello()
+
+const ehPar = n => n % 2 === 0
+console.log(ehPar(10))
+
+const ehPar2 = n => {n % 2 === 0}
+console.log(ehPar2(10))
+
+// const f = () => {}
+// const umArgumento = n => {
+// 	console.log(n)
+// }
+
+// const soUmaLinha = () => console.log("oi")
+
+// const teste1 = (a, b) => {
+// 	return a + b
+// }
+
+// const teste2 = (a, b) => a + b
+
+
+// const dobro = function (n){
+// 	return 2 * n
+// }
+
+// const result = dobro(6)
+// console.log(result)
+
+// //valor padrão para um parâmetro
+// const triplo = function (n = 5){
+// 	return 3 * n
+// }
+
+// console.log(triplo())
+// console.log(triplo(10))
