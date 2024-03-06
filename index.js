@@ -1,3 +1,73 @@
+const fs = require('fs')
+const abrirArquivo = (nomeArquivo) => {
+    const exibirConteudo = (erro, conteudo) => {
+            if(erro){
+                console.log(`Erro: ${erro}`)
+            }
+            else{
+                console.log(conteudo.toString())
+                const resultado = +conteudo.toString() * 10 //+conteudo.toString, transforma a string em int
+                const finalizar = (erro) => {
+                    if(!erro) {
+                        console.log('Conteúdo escrito com sucesso')
+                    }
+                    else{
+                        console.log('Escrita Falhou')
+                    }
+                }
+                fs.writeFile('resultado.txt', resultado.toString(), finalizar)
+            }
+    }
+    fs.readFile(nomeArquivo, exibirConteudo)
+}
+abrirArquivo('arquivo.txt')
+
+
+// function demorada (){
+//     //pegar o horário atual do sistema, e deslocar ele 2 segundos no futuro
+//     const atualMais2Segundos = new Date().getTime() + 2000
+//     while (new Date().getTime() <= atualMais2Segundos); //NO-OP: No Operation
+//     const d = 8 + 4
+//     return d
+// }
+
+// const a = 2 + 5
+// const b = 5 + 9
+// setTimeout(function(){  //Colocamos a execução dessa função na fila para execuções, dando um tempo de 500ms
+//     const d = demorada()
+//     console.log('d: ' + d)
+// }, 500)
+
+// const e = 2 + a + b
+// console.log('e: '+ e)
+
+
+// function demorada (){
+//     //pegar o horário atual do sistema, e deslocar ele 2 segundos no futuro
+//     const atualMais2Segundos = new Date().getTime() + 2000
+//     while (new Date().getTime() <= atualMais2Segundos); //NO-OP: No Operation
+//     const d = 8 + 4
+//     return d
+// }
+
+// const a = 2 + 5
+// const b = 5 + 9
+// const d = demorada () //Mesmo não sendo necessária ela deve ser executada, atrasando o resto da execução
+
+// const e = 2 + a + b
+// console.log(e)
+
+
+
+// const a = 2 + 7
+// const b = 5
+// console.log (a+b)
+
+// console.log('Eu primeiro')
+// console.log('Agora eu')
+// console.log('Sempre vou ser a última...')
+
+
 // //uma pessoa chamada João que tem 17 anos de idade
 // let pessoa = {
 //     nome: 'João',    //nome é uma chave e Joao é o valor dessa chave
@@ -39,12 +109,12 @@
 // console.log(concessionaria.carro[1].marca)
 
 //CALCULADORA QUE FAZ SOMA E SUBTRAÇÃO CADA OPERAÇÃO ENVOLVE DOIS OPERANDOS
-let calculadora = {
-    soma: (a , b) => a+b,
-    subtracao: function (a,b){
-        return (a - b)
-    }
-}
+// let calculadora = {
+//     soma: (a , b) => a+b,
+//     subtracao: function (a,b){
+//         return (a - b)
+//     }
+// }
 
 
 //LET
