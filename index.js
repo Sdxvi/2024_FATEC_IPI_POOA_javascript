@@ -1,3 +1,52 @@
+// //uma pessoa chamada João que tem 17 anos de idade
+// let pessoa = {
+//     nome: 'João',    //nome é uma chave e Joao é o valor dessa chave
+//     idade: 17
+// }  //Para acessar os membros podemos usar . ou []
+// console.log(pessoa.nome)  
+// console.log(pessoa['idade'])
+
+// let pessoa1 = {
+//     nome: 'Maria',
+//     idade: 21,
+//     endereco: {
+//         logradouro: 'Rua B',
+//         numero: 14
+//     }
+// }
+// console.log(pessoa1['endereco']['logradouro'], pessoa1.endereco.numero)
+
+// let concessionaria = {
+//     CPNJ: '837428472',
+//     endereco: {
+//         logradouro: 'Rua J',
+//         numero: 50
+//     },
+//     carro: [
+//         {
+//             marca: 'Honda',
+//             modelo: 'Civic',
+//             ano: 2015
+//         },
+//         {
+//             marca:'Ford',
+//             modelo: 'Fiesta',
+//             ano: 2015
+//         }
+//     ]
+// }
+
+// console.log(concessionaria.carro[1].marca)
+
+//CALCULADORA QUE FAZ SOMA E SUBTRAÇÃO CADA OPERAÇÃO ENVOLVE DOIS OPERANDOS
+let calculadora = {
+    soma: (a , b) => a+b,
+    subtracao: function (a,b){
+        return (a - b)
+    }
+}
+
+
 //LET
 // let nome = "Rodrigo"
 // console.log(nome)
@@ -88,24 +137,24 @@
 // hello()
 
 
-function eAgora(){
-    let cont = 1
-    function f1(){
-        console.log(cont)
-        cont++
-    }
-    cont++
-    function f2(){
-        console.log(cont)
-    }
-    return {f1, f2}
-}
+// function eAgora(){
+//     let cont = 1
+//     function f1(){
+//         console.log(cont)
+//         cont++
+//     }
+//     cont++
+//     function f2(){
+//         console.log(cont)
+//     }
+//     return {f1, f2}
+// }
 
-let eAgoraResult = eAgora()
-eAgoraResult.f1()
-eAgoraResult.f2()
-eAgoraResult.f1()
-eAgoraResult.f2()
+// let eAgoraResult = eAgora()
+// eAgoraResult.f1()
+// eAgoraResult.f2()
+// eAgoraResult.f1()
+// eAgoraResult.f2()
 
 // function saudacoesFactory (saudacao, nome){
 //     return function(){
