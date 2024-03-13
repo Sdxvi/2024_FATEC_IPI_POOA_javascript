@@ -1,4 +1,41 @@
 
+
+// function calculadoRapidinho(n){
+//     return Promise.resolve((n/2) * (n + 1))
+// }
+
+// calculadoRapidinho(100).then(resultado => console.log(resultado))
+
+// function calculoDemorado(n){
+//     let p = new Promise(function(resolve, reject){
+//         if (n < 0){
+//             reject ('Somente positivos')
+//         }
+//         else { let res = 0
+//         for(let i = 1; i <= n; i++) res += i
+//         resolve(res)
+//         }
+//     })
+//     return p
+// }
+
+// calculoDemorado(5).then(res => {console.log(res)}).catch(erro => console.log('erro: ' + erro))
+
+// let minhaPromise = calculoDemorado (100)
+// // then (computação com sucesso)
+// // catch (computação com falha)
+// minhaPromise.then((resultado) => console.log(resultado))
+
+// function calculoDemorado(n){
+//     let res = 0
+//     for(let i = 1; i <= n; i++) res += i
+//     return res
+// }
+
+// const resultado = calculoDemorado
+// console.log(resultado)
+// console.log('outra coisa qualquer')
+
 // 1 + 2 + 3 + . . . + n -2 + n - 1 + n
 // const calculoDemorado = (n) => {
 //     let p = new Promise((resolve, reject) => {
@@ -14,19 +51,19 @@
 // console.log(aux)
 
 
-const soma = (a, b) => {
-    let p = new Promise((resolve, reject) => {
-        //se a e b forem positivos
-        //chamar resolve passando a + b como parâmetro
-        // caso contrário
-        // chamar reject passando texto "não use negativos" como parâmetro
-        if(a >= 0 && b >= 0) resolve(a+b)
-        else reject('não use negativos')
-    })
-    return p
-}
+// const soma = (a, b) => {
+//     let p = new Promise((resolve, reject) => {
+//         //se a e b forem positivos
+//         //chamar resolve passando a + b como parâmetro
+//         // caso contrário
+//         // chamar reject passando texto "não use negativos" como parâmetro
+//         if(a >= 0 && b >= 0) resolve(a+b)
+//         else reject('não use negativos')
+//     })
+//     return p
+// }
 
-soma(-2, -7).then(res => console.log(`Resultado: ${res}`)).catch ((erro) => console.log(erro))
+// soma(-2, -7).then(res => console.log(`Resultado: ${res}`)).catch ((erro) => console.log(erro))
 //descobrir como faz o catch
 
 // const fs = require('fs')
